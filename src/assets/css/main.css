@@ -3075,7 +3075,11 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #999999;
+				color: #444444;
+			}
+
+			.wrapper.style2 p {
+				color: #666666;
 			}
 
 			.wrapper.style2 table tbody tr {
