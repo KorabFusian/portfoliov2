@@ -6,6 +6,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "cleanUrl": true
+    "cleanUrls": true
   }
 }
