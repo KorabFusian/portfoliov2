@@ -13,8 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
-		<!-- Header -->
+	<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
 				<a href="#menu">Menu</a>
@@ -22,21 +21,41 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
+				<ul class="links" lang="en">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li><a href="vfx.html">Visuals</a></li>
 					<li><a href="about.html">About me</a></li>
 				</ul>
+				<ul class="links" lang="fr">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projects.html">Projets</a></li>
+					<li><a href="vfx.html">Visuels</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li></li>
+				</ul>
+				<footer >
+					<button onclick="localize ('fr')" id="buttonFR">Français</button>
+					<button onclick="localize ('en')" id="buttonEN">English</button>
+				</footer>
 			</nav>
+
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
 				<div class="inner">
-					<header class="align-center">
-						<p>I like when things look cool!</p>
-						<h2>3D and Visual Effects</h2>
-					</header>
+					<div lang="en">
+						<header class="align-center">
+							<p>I like when things look cool!</p>
+							<h2>3D and Visual Effects</h2>
+						</header>
+					</div>
+					<div lang="fr">
+						<header class="align-center">
+							<p>J'aime les choses jolies !</p>
+							<h2>3D et Effets Visuels</h2>
+						</header>
+					</div>
 				</div>
 			</section>
 
@@ -45,10 +64,18 @@
 				<div class="inner">
 					<div class="box">
 						<div class="content">
-							<header class="align-center">
-								<p>I make 3D models for fun</p>
-								<h2>Blender</h2>
-							</header>
+							<div lang="en">
+								<header class="align-center">
+									<p>I make 3D models for fun</p>
+									<h2>Blender</h2>
+								</header>
+							</div>
+							<div lang="fr">
+								<header class="align-center">
+									<p>Je fais des modèles 3D</p>
+									<h2>Blender</h2>
+								</header>
+							</div>
 								<div class="box">
 									<div class="row 25% uniform">
 										<div class="4u"><span class="image fit"><img src="images/egg.jpg" alt="Egg and Coils" /></span></div>
@@ -61,10 +88,18 @@
 								</div>
 							
 
-							<header class="align-center">
-								<p>I also make video effects</p>
-								<h2>After Effects</h2>
-							</header>
+								<div lang="en">
+									<header class="align-center">
+										<p>I also make video effects</p>
+										<h2>After Effects</h2>
+									</header>
+								</div>
+								<div lang="fr">
+									<header class="align-center">
+										<p>Je fais aussi des effets vidéo</p>
+										<h2>After Effects</h2>
+									</header>
+								</div>
 								<div class="box">
 									<div class="row 25% uniform">
 										<div class="6u">
@@ -101,23 +136,28 @@
 		<footer id="footer">
 			<div class="container">
 				<ul class="icons">
-					<li><a href="http://github.com/KorabFusian" class="icon fa-github-square"><span class="label">Twitter</span></a></li>
-					<li><a href="http://linkedin.com/in/jeremi-friggit" class="icon fa-linkedin-square"><span class="label">Facebook</span></a></li>
-					<li><a href="https://open.spotify.com/artist/3dlAdpP912xJpmUv5DoKzc" class="icon fa-spotify"><span class="label">Instagram</span></a></li>
+					<li><a href="http://github.com/KorabFusian" class="icon fa-github-square"><span class="label">GitHub</span></a></li>
+					<li><a href="http://linkedin.com/in/jeremi-friggit" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://open.spotify.com/artist/3dlAdpP912xJpmUv5DoKzc" class="icon fa-spotify"><span class="label">Spotify</span></a></li>
 					<li><a href="mailto:jeremifk@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 			</div>
-			<div class="copyright">
+			<div class="copyright" lang="en">
 				&copy; Jérémi Friggit. Based on a <a href="http://templated.co">Templated</a> template. Hosted on <a href="firebase.google.com">Firebase</a>.
 			</div>
+			<div class="copyright" lang="fr">
+				&copy; Jérémi Friggit. Basé sur un template <a href="http://templated.co">Templated</a>. Hébergé par <a href="firebase.google.com">Firebase</a>.
+			</div>
 		</footer>
+	</div>
 
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/localize.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>

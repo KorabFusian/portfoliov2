@@ -13,8 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
-		<!-- Header -->
+	<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
 				<a href="#menu">Menu</a>
@@ -22,28 +21,48 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
+				<ul class="links" lang="en">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li><a href="vfx.html">Visuals</a></li>
 					<li><a href="about.html">About me</a></li>
 				</ul>
+				<ul class="links" lang="fr">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projects.html">Projets</a></li>
+					<li><a href="vfx.html">Visuels</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li></li>
+				</ul>
+				<footer >
+					<button onclick="localize ('fr')" id="buttonFR">Français</button>
+					<button onclick="localize ('en')" id="buttonEN">English</button>
+				</footer>
 			</nav>
 
+
 		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<div lang="en">
 					<header class="align-center">
 						<p>My major school and coding projects</p>
 						<h2>Projects</h2>
 					</header>
 				</div>
-			</section>
+				<div lang="fr">
+					<header class="align-center">
+						<p>Mes projets de code majeurs</p>
+						<h2>Projets</h2>
+					</header>
+				</div>
+			</div>
+		</section>
 
 	<!-- Project -->
 		<section id="two" class="wrapper style2">
 			<div class="inner">
-				<div>
+				<div lang="en">
 					<div class="row 200%">
 						<div class="6u 12u$(medium)">
 							<div class="image fit align-left">
@@ -70,6 +89,33 @@
 						</div>
 					</div>
 				</div>
+				<div lang="fr">
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+							<div class="image fit align-left">
+								<img src="images/ZBOffice.svg" alt="ZBOffice" />
+							</div>
+						</div>
+						
+						<div class="6u 12u$(medium)">
+							<header class="align-center">
+								<p>Tuez des monstres en rythme!</p>
+								<h2>Zombeat Office</h2>
+							</header>
+							<h4>Zombeat Office est un petit jeu de rythme dans lequel chaque action doit être prise au tempo d'une bande-son originale !</h4>
+							<p>Dans la même veine que Crypt of the Necrodancer, ou plus récemment Bullets Per Minute, Zombeat Office est un minijeu où le joueur doit combattre des monstres en rythme. La bande-son est 100% originale, et le jeu incorpore des éléments de roguelike, tels que la génération de niveaux aléatoire et la rejouabilité infinie.</p>
+							<footer class="align-center">
+								<p>Technologies utilisées:</p>
+								<ul class="alt">
+									<li><i class="fab fa-unity"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Unity2D</span></li>
+									<li><i class="fas fa-paint-brush"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Adobe Illustrator</span></li>
+									<li><i class="fas fa-music"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Ableton Live 10</span></li>
+								</ul>
+								<a href="https://github.com/AmiralBl3ndic/Zombeat-Office" class="button"><i class="icon fa-github-square" style="font-size: xx-large; vertical-align: middle;"></i> Voir le code sur Github</a>
+							</footer>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -83,12 +129,17 @@
 					<li><a href="mailto:jeremifk@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 			</div>
-			<div class="copyright">
+			<div class="copyright" lang="en">
 				&copy; Jérémi Friggit. Based on a <a href="http://templated.co">Templated</a> template. Hosted on <a href="firebase.google.com">Firebase</a>.
 			</div>
+			<div class="copyright" lang="fr">
+				&copy; Jérémi Friggit. Basé sur un template <a href="http://templated.co">Templated</a>. Hébergé par <a href="firebase.google.com">Firebase</a>.
+			</div>
 		</footer>
+	</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/localize.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

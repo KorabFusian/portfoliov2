@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <!--
 	Jérémi Friggit - Portfolio
 	Made by Jérémi Friggit (@jeremifk on twitter, @KorabFusian on GitHub) using Hielo by TEMPLATED
@@ -12,36 +13,152 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
+	<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
-			<a href="#menu">Menu</a>
-		</header>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links" lang="en">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="vfx.html">Visuals</a></li>
+					<li><a href="about.html">About me</a></li>
+				</ul>
+				<ul class="links" lang="fr">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projects.html">Projets</a></li>
+					<li><a href="vfx.html">Visuels</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li></li>
+				</ul>
+				<footer >
+					<button onclick="localize ('fr')" id="buttonFR">Français</button>
+					<button onclick="localize ('en')" id="buttonEN">English</button>
+				</footer>
+			</nav>
+<!DOCTYPE HTML>
+<!--
+	Jérémi Friggit - Portfolio
+	Made by Jérémi Friggit (@jeremifk on twitter, @KorabFusian on GitHub) using Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Jérémi Friggit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+	<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
 
-	<!-- Nav -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="vfx.html">Visuals</a></li>
-				<li><a href="about.html">About me</a></li>
-			</ul>
-		</nav>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links" lang="en">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="vfx.html">Visuals</a></li>
+					<li><a href="about.html">About me</a></li>
+				</ul>
+				<ul class="links" lang="fr">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projects.html">Projets</a></li>
+					<li><a href="vfx.html">Visuels</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li></li>
+				</ul>
+				<footer >
+					<button onclick="localize ('fr')" id="buttonFR">Français</button>
+					<button onclick="localize ('en')" id="buttonEN">English</button>
+				</footer>
+			</nav>
+
 
 		<!-- Projects title -->
-		<section id="title" class="wrapper style3">
+		<section id="projects-title" class="wrapper style3">
 			<div class="inner">
-				<header class="align-center">
-					<h2>My projects</h2>
-				</header>
+				<div lang="en">
+					<header class="align-center">
+						<h2>My projects</h2>
+					</header>
+				</div>
+			</div>
+			<div class="inner">
+				<div lang="fr">
+					<header class="align-center">
+						<h2>Mes projets</h2>
+					</header>
+				</div>
 			</div>
 		</section>
 
 		<!-- Projects list -->
 			<section id="projects" class="wrapper style2">
 				<div class="inner">
-					<div class="grid-style">
+					<div lang="fr">
+						<div class="grid-style">
+							<div class="project">
+								<div class="box">
+									<div class="image fit">
+										<img src="images/wayhome.svg" alt="" />
+									</div>
+									<div class="content">
+										<header class="align-center">
+											<p>L'app garde du corps</p>
+											<h2>wayHOME</h2>
+										</header>
+										<footer class="align-center">
+											<a href="wayhome.html" class="button alt">En savoir plus</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+
+							<div class="project">
+								<div class="box">
+									<div class="image fit">
+										<img src="images/weAR.svg" alt="" />
+									</div>
+									<div class="content">
+										<header class="align-center">
+											<p>La cabine d'essayage AR</p>
+											<h2>weAR</h2>
+										</header>
+										<footer class="align-center">
+											<a href="wear.html" class="button alt">En savoir plus</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+
+							<div class="project">
+								<div class="box">
+									<div class="image fit">
+										<img src="images/ZBOffice.svg" alt="" />
+									</div>
+									<div class="content">
+										<header class="align-center">
+											<p>Tuez des monstres en rythme!</p>
+											<h2>Zombeat Office</h2>
+										</header>
+										<footer class="align-center">
+											<a href="zboffice.html" class="button alt">En savoir plus</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+					</div>
+					</div>	
+					<div lang="en">
+						<div class="grid-style">
 							<div class="project">
 								<div class="box">
 									<div class="image fit">
@@ -93,26 +210,32 @@
 								</div>
 							</div>
 					</div>
+					</div>	
 				</div>
 			</section>
 
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="http://github.com/KorabFusian" class="icon fa-github-square"><span class="label">Twitter</span></a></li>
-						<li><a href="http://linkedin.com/in/jeremi-friggit" class="icon fa-linkedin-square"><span class="label">Facebook</span></a></li>
-						<li><a href="https://open.spotify.com/artist/3dlAdpP912xJpmUv5DoKzc" class="icon fa-spotify"><span class="label">Instagram</span></a></li>
-						<li><a href="mailto:jeremifk@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Jérémi Friggit. Based on a <a href="http://templated.co">Templated</a> template. Hosted on <a href="firebase.google.com">Firebase</a>.
-				</div>
-			</footer>
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+					<li><a href="http://github.com/KorabFusian" class="icon fa-github-square"><span class="label">GitHub</span></a></li>
+					<li><a href="http://linkedin.com/in/jeremi-friggit" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://open.spotify.com/artist/3dlAdpP912xJpmUv5DoKzc" class="icon fa-spotify"><span class="label">Spotify</span></a></li>
+					<li><a href="mailto:jeremifk@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+			<div class="copyright" lang="en">
+				&copy; Jérémi Friggit. Based on a <a href="http://templated.co">Templated</a> template. Hosted on <a href="firebase.google.com">Firebase</a>.
+			</div>
+			<div class="copyright" lang="fr">
+				&copy; Jérémi Friggit. Basé sur un template <a href="http://templated.co">Templated</a>. Hébergé par <a href="firebase.google.com">Firebase</a>.
+			</div>
+		</footer>
+	</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/localize.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

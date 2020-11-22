@@ -13,8 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
-		<!-- Header -->
+	<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"/><span class="onlyifbig">Jérémi Friggit</span></a></div>
 				<a href="#menu">Menu</a>
@@ -22,28 +21,74 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
+				<ul class="links" lang="en">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li><a href="vfx.html">Visuals</a></li>
 					<li><a href="about.html">About me</a></li>
 				</ul>
+				<ul class="links" lang="fr">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projects.html">Projets</a></li>
+					<li><a href="vfx.html">Visuels</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li></li>
+				</ul>
+				<footer >
+					<button onclick="localize ('fr')" id="buttonFR">Français</button>
+					<button onclick="localize ('en')" id="buttonEN">English</button>
+				</footer>
 			</nav>
+
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
 				<div class="inner">
-					<header class="align-center">
-						<p>My major school and coding projects</p>
-						<h2>Projects</h2>
-					</header>
+					<div lang="en">
+						<header class="align-center">
+							<p>My major school and coding projects</p>
+							<h2>Projects</h2>
+						</header>
+					</div>
+					<div lang="fr">
+						<header class="align-center">
+							<p>Mes projets de code majeurs</p>
+							<h2>Projets</h2>
+						</header>
+					</div>
 				</div>
 			</section>
 
 	<!-- Project -->
 		<section id="two" class="wrapper style2">
 			<div class="inner">
-				<div>
+				<div lang="en">
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+							<div class="image fit align-left">
+								<img src="images/wayhome.svg" alt="weAR" />
+							</div>
+						</div>
+						
+						<div class="6u 12u$(medium)">
+							<header class="align-center">
+								<p>L'app garde du corps</p>
+								<h2>wayHOME</h2>
+							</header>
+							<h4>wayHOME is a bodyguard app that, once you activate it, will notify your contacts when you get home... or not (hopefully when you do though).</h4>
+							<p>wayHOME uses your current position and itinerary to check if you are safely getting home. If so, when you do get to your destination, it opens your text messaging app to notify your emergency contacts. If it detects a problem with your pathing for an extended period of time, it sends them your current position. Perfect for getting home after a party, or for your children after school, or to keep your grandma unworried!</p>
+							<footer class="align-center">
+								<p>Techs used:</p>
+								<ul class="alt">
+									<li><i class="fas fa-code"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Dart</span></li>
+									<li><i class="fas fa-code"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Flutter</span></li>
+								</ul>
+								<a href="https://github.com/AmiralBl3ndic/wayhome-app" class="button"><i class="icon fa-github" style="font-size: xx-large; vertical-align: middle;"></i> See Code on GitHub</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div lang="fr">
 					<div class="row 200%">
 						<div class="6u 12u$(medium)">
 							<div class="image fit align-left">
@@ -56,15 +101,15 @@
 								<p>The bodyguard app</p>
 								<h2>wayHOME</h2>
 							</header>
-							<h4>wayHOME is a bodyguard app that, once you activate it, will notify your contacts when you get home... or not (hopefully when you do though).</h4>
-							<p>wayHOME uses your current position and itinerary to check if you are safely getting home. If so, when you do get to your destination, it opens your text messaging app to notify your emergency contacts. If it detects a problem with your pathing for an extended period of time, it sends them your current position. Perfect for getting home after a party, or for your children after school, or to keep your grandma unworried!</p>
+							<h4>wayHOME est une application garde du corps qui, une fois activée, traque la position de l'utilisateur et envoie un message quand celui-ci arrive à bon port... ou pas.</h4>
+							<p>wayHOME utilise votre position actuelle et votre itinéraire pour vérifier que vous rentrez bien. Si c'est le cas, l'application ouvre l'application SMS avec un message personnalisé pour vos contacts d'urgence une fois arrivé à destination. Sil'application détecte un problème pendant une certaine durée, elle envoie votre position à ces mêmes contacts. Parfait pour rentrer de soirée, ou pour vos enfants après l'école, ou pour ne pas inquiéter votre grand-mère !</p>
 							<footer class="align-center">
-								<p>Techs used:</p>
+								<p>Technologies utilisées:</p>
 								<ul class="alt">
 									<li><i class="fas fa-code"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Dart</span></li>
 									<li><i class="fas fa-code"  style="font-size: xx-large; vertical-align: middle;"></i><span> - Flutter</span></li>
 								</ul>
-								<a href="https://github.com/AmiralBl3ndic/wayhome-app" class="button"><i class="icon fa-github" style="font-size: xx-large; vertical-align: middle;"></i> See Code on GitHub</a>
+								<a href="https://github.com/AmiralBl3ndic/wayhome-app" class="button"><i class="icon fa-github" style="font-size: xx-large; vertical-align: middle;"></i> Voir le code sur Github</a>
 							</footer>
 						</div>
 					</div>
@@ -82,12 +127,17 @@
 					<li><a href="mailto:jeremifk@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 			</div>
-			<div class="copyright">
+			<div class="copyright" lang="en">
 				&copy; Jérémi Friggit. Based on a <a href="http://templated.co">Templated</a> template. Hosted on <a href="firebase.google.com">Firebase</a>.
 			</div>
+			<div class="copyright" lang="fr">
+				&copy; Jérémi Friggit. Basé sur un template <a href="http://templated.co">Templated</a>. Hébergé par <a href="firebase.google.com">Firebase</a>.
+			</div>
 		</footer>
+	</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/localize.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

@@ -9,6 +9,19 @@ function localize (language)
         document.querySelectorAll(show).forEach(function (node) {
           node.style.display = 'unset';
         });
+        if(language === "fr") {
+            document.getElementById("buttonFR").style.backgroundColor = "#89A"
+            document.getElementById("buttonFR").style.color = "#000"
+            document.getElementById("buttonEN").style.backgroundColor = "#FFF"
+            document.getElementById("buttonEN").style.color = "#000"
+        }   
+        if(language === "en") {
+            document.getElementById("buttonFR").style.backgroundColor = "#FFF"
+            document.getElementById("buttonFR").style.color = "#000"
+            document.getElementById("buttonEN").style.backgroundColor = "#89A"
+            document.getElementById("buttonEN").style.color = "#000"
+        }
+            
 }
 
 if (window.navigator.language === "fr" || window.navigator.language === "en") {

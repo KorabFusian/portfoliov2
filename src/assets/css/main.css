@@ -4035,7 +4035,7 @@
 			}
 
 			#menu .close:hover {
-				color: #000;
+				color: #555;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -4062,6 +4062,12 @@
 				padding: 2.5rem 1.75rem;
 			}
 
+		}
+
+		#menu > footer {
+			position: absolute;
+			bottom: 0;
+			margin: 0 0 3rem 0;
 		}
 
 /* Banner */
